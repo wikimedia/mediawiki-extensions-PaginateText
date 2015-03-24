@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Ike Hecht"
+			"Ike Hecht",
+			"Umherirrender"
 		]
 	},
-	"paginatetext-desc": "{{desc|name=PaginateText|url=http://www.mediawiki.org/wiki/Extension:PaginateText}}"
+	"paginatetext-desc": "{{desc|name=PaginateText|url=https://www.mediawiki.org/wiki/Extension:PaginateText}}"
 }
