@@ -2,7 +2,7 @@
 /**
  * PaginateText extension - Paginates a long block of text.
  *
- * For more info see http://mediawiki.org/wiki/Extension:PaginateText
+ * For more info see https://mediawiki.org/wiki/Extension:PaginateText
  *
  * @file
  * @ingroup Extensions
