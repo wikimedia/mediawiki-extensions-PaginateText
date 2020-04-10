@@ -17,7 +17,7 @@
 		]
 	},
 	"AutoloadClasses": {
-		"PaginateTextHooks": "PaginateText.hooks.php"
+		"PaginateTextHooks": "PaginateTextHooks.php"
 	},
 	"ResourceModules": {
 		"ext.PaginateText": {

@@ -17,8 +17,8 @@ class PaginateTextHooks {
 	/**
 	 * Add the tag hook
 	 *
-	 * @param Parser $parser
-	 * @return boolean
+	 * @param Parser &$parser
+	 * @return bool
 	 */
 	public static function addTag( Parser &$parser ) {
 		$parser->setHook( 'paginatetext', 'PaginateTextHooks::getTagOutput' );
@@ -42,7 +42,7 @@ class PaginateTextHooks {
 
 		self::$loadJS = true;
 
-		$options = array( 'id' => 'paginate-text', 'style' => "height: {$args['height']};" );
+		$options = [ 'id' => 'paginate-text', 'style' => "height: {$args['height']};" ];
 		$output = $parser->recursiveTagParse( $input, $frame );
 		return Html::rawElement( 'div', $options, $output ) . self::getControls();
 	}
@@ -50,9 +50,9 @@ class PaginateTextHooks {
 	/**
 	 * Add the JS & CSS modules
 	 *
-	 * @param OutputPage $out
-	 * @param Skin $skin Unused
-	 * @return boolean
+	 * @param OutputPage &$out
+	 * @param Skin &$skin Unused
+	 * @return bool
 	 */
 	public static function addModules( OutputPage &$out, Skin &$skin ) {
 		if ( self::$loadJS ) {
@@ -68,11 +68,11 @@ class PaginateTextHooks {
 	 * @return string HTML
 	 */
 	public static function getControls() {
-		$output = Html::openElement( 'div', array( 'class' => 'controls' ) );
+		$output = Html::openElement( 'div', [ 'class' => 'controls' ] );
 		$output .= Html::rawElement( 'a',
-				array( 'class' => array( 'tp-control-arrow-left', 'unactive' ) ), '<' );
-		$output .= Html::rawElement( 'a', array( 'class' => 'tp-control-arrow-right' ), '>' );
-		$output .= Html::rawElement( 'ul', array( 'class' => 'tp-pager' ) );
+				[ 'class' => [ 'tp-control-arrow-left', 'unactive' ] ], '<' );
+		$output .= Html::rawElement( 'a', [ 'class' => 'tp-control-arrow-right' ], '>' );
+		$output .= Html::rawElement( 'ul', [ 'class' => 'tp-pager' ] );
 		$output .= Html::closeElement( 'div' );
 		return $output;
 	}
