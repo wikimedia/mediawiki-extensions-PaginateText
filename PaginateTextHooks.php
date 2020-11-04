@@ -10,7 +10,7 @@ class PaginateTextHooks {
 	/**
 	 * Flag to indicate that this page needs pagination and should have the appropriate modules loaded
 	 *
-	 * @var boolean
+	 * @var bool
 	 */
 	public static $loadJS = false;
 
