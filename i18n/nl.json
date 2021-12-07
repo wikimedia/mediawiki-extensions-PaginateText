@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
-			"Esketti"
+			"Esketti",
+			"McDutchie"
 		]
 	},
-	"paginatetext-desc": "Pagineren een lange blok tekst"
+	"paginatetext-desc": "Pagineert een lang tekstblok"
 }
