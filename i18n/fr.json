@@ -1,8 +1,9 @@
 {
 	"@metadata": {
 		"authors": [
+			"Verdy p",
 			"Wladek92"
 		]
 	},
-	"paginatetext-desc": "Met en page un long bloc de texte"
+	"paginatetext-desc": "Pagine un long bloc de texte"
 }
