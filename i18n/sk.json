@@ -1,0 +1,8 @@
+{
+	"@metadata": {
+		"authors": [
+			"Wizzard"
+		]
+	},
+	"paginatetext-desc": "Rozdeľuje dlhý blok textu na strany"
+}
